@@ -22,11 +22,22 @@
         <nav class="navbar">
           <a href="index.html" class="navbar__logo">This Interior</a>
 
+          <button class="navbar__toggle">
+            <i class="fas fa-bars"></i>
+            <!-- <i class="fas fa-times"></i> -->
+          </button>
+
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="menu__item">
+              <a class="menu__link active" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Collection</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -37,14 +48,35 @@
             <h1 class="about__title">Modern interior</h1>
             <p class="about__description">
               A full-Service residential & commercial interior design and
-              staging company offering professional organizing & eco-services.
+              staging company offering professional organizing & <br />
+              eco-services.
             </p>
-            <a href="#" class="about__read-more"
-              >Read more <i class="fas fa-long-arrow-alt-right"></i
-            ></a>
+            <a href="#" class="about__read-more">
+              Read more
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
           </div>
 
-          <img src="assets/img/photo1.png" alt="" class="about__image" />
+          <div class="about__image">
+            <img src="assets/img/photo1.png" alt="" />
+
+            <div class="designer">
+              <div class="designer__info-wrapper">
+                <img
+                  src="assets/img/photo2.png"
+                  alt=""
+                  class="designer__avatar"
+                />
+
+                <div class="designer__info">
+                  <p class="designer__name">Aliza Webber</p>
+                  <p class="designer__job">Interior designer</p>
+                </div>
+              </div>
+
+              <p class="designer__content">Designed in 2020 by Aliza Webber</p>
+            </div>
+          </div>
         </section>
       </main>
 
@@ -52,5 +84,7 @@
         <span>kctrnn @ DevChallenges.io</span>
       </footer>
     </div>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
