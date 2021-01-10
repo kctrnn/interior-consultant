@@ -1,9 +1,9 @@
 window.addEventListener('load', () => {
-  const navToggle = document.querySelector('.navbar__toggle');
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.menu');
 
-  navToggle?.addEventListener('click', () => {
-    const menu = document.querySelector('.menu');
-
+  burger?.addEventListener('click', () => {
+    burger.classList.toggle('active');
     menu.classList.toggle('active');
   });
 });
